@@ -138,7 +138,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-screen flex flex-col text-neutral-body bg-white selection:bg-teal selection:text-white">
         <EmergencyBanner />
         <Navbar />
-        <main className="flex-grow pt-20">
+        <main className="flex-grow">
           {children}
         </main>
         <StickyAppointmentBar />

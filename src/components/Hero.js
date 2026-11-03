@@ -5,7 +5,7 @@ import { doctorData } from "@/data/doctor";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-neutral-offwhite border-b border-neutral-border pt-12 pb-16 lg:py-20">
+    <section className="relative overflow-hidden bg-neutral-offwhite border-b border-neutral-border pt-6 pb-12 sm:pt-8 sm:pb-14 lg:pt-8 lg:pb-16">
       {/* Subtle Background Pattern */}
       <div className="absolute inset-0 bg-medical-grid opacity-60 pointer-events-none" />
       
@@ -13,7 +13,7 @@ export default function Hero() {
       <div className="absolute -top-40 right-0 w-96 h-96 bg-teal-light rounded-full blur-3xl opacity-50 pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-start">
           
           {/* Left Editorial Content (7 cols on lg) */}
           <div className="lg:col-span-7 space-y-6 text-left">
