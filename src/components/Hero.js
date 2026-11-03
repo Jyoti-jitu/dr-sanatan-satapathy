@@ -103,30 +103,17 @@ export default function Hero() {
                   />
                 </div>
 
-                {/* Doctor Details & Credential Panel below photo - crystal clear, no dark shades */}
-                <div className="p-4 bg-white border-t border-neutral-border text-left space-y-3">
-                  <div>
-                    <h3 className="font-heading font-bold text-lg text-navy-heading">
-                      {doctorData.name}
-                    </h3>
-                    <p className="text-xs text-teal font-semibold">
-                      MBBS, MS, MCh (Neurosurgery)
-                    </p>
-                    <p className="text-[11px] text-neutral-body mt-0.5">
-                      Senior Neurosurgeon & Spine Care Specialist
-                    </p>
-                  </div>
-
-                  <div className="grid grid-cols-2 gap-2 pt-2 border-t border-neutral-border/60">
-                    <div className="p-2 rounded-lg bg-neutral-offwhite border border-neutral-border/60">
-                      <p className="text-[10px] text-neutral-body uppercase font-semibold">Specialization</p>
-                      <p className="text-xs font-bold text-navy-heading mt-0.5">Endoscopic Spine & Cranial</p>
-                    </div>
-                    <div className="p-2 rounded-lg bg-neutral-offwhite border border-neutral-border/60">
-                      <p className="text-[10px] text-neutral-body uppercase font-semibold">Training</p>
-                      <p className="text-xs font-bold text-navy-heading mt-0.5">SCB Cuttack & AIIMS</p>
-                    </div>
-                  </div>
+                {/* Doctor Details Panel below photo */}
+                <div className="p-4 bg-white border-t border-neutral-border text-left">
+                  <h3 className="font-heading font-bold text-lg text-navy-heading">
+                    {doctorData.name}
+                  </h3>
+                  <p className="text-xs text-teal font-semibold">
+                    MBBS, MS, MCh (Neurosurgery)
+                  </p>
+                  <p className="text-[11px] text-neutral-body mt-0.5">
+                    Senior Neurosurgeon & Spine Care Specialist
+                  </p>
                 </div>
               </div>
 
