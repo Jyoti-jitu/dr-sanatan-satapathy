@@ -19,20 +19,20 @@ export default function Hero() {
           <div className="lg:col-span-7 space-y-6 text-left">
             
             {/* Eyebrow */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-light border border-teal/20 text-teal text-xs font-semibold tracking-wider uppercase">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-light border border-teal/20 text-teal text-xs font-bold tracking-wider uppercase">
               <span className="w-2 h-2 rounded-full bg-teal animate-pulse" />
-              <span>Neurosurgery & Spine Care</span>
+              <span>Brain & Spine Specialist</span>
             </div>
 
             {/* Main Headline */}
-            <h1 className="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl text-navy-heading leading-[1.12] tracking-tight">
-              Advanced Brain & Spine Care. <br className="hidden sm:inline" />
-              <span className="text-navy">Focused on You.</span>
+            <h1 className="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl text-navy-heading leading-[1.18] tracking-tight">
+              Behind Every Diagnosis Is a Life. <br className="hidden sm:inline" />
+              <span className="text-teal">Behind Every Treatment, a Responsibility.</span>
             </h1>
 
             {/* Editorial Description */}
             <p className="editorial-lead max-w-2xl text-neutral-body text-base sm:text-lg">
-              {doctorData.name} provides specialist neurosurgical and spine care in Bhubaneswar, with a focus on individualized treatment planning, tissue-preserving endoscopic procedures, and modern surgical approaches.
+              Dr. Sanatan Satapathy provides specialist neurosurgical and spine care in Bhubaneswar, with a focus on individualized treatment planning, tissue-preserving endoscopic procedures, and modern surgical approaches.
             </p>
 
             {/* Action Buttons */}
