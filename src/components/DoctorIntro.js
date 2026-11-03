@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, CheckCircle2, ShieldCheck, UserCheck, HeartHandshake } from "lucide-react";
+import { ArrowRight, CheckCircle2, ShieldCheck, UserCheck } from "lucide-react";
 import { doctorData } from "@/data/doctor";
 
 export default function DoctorIntro() {
@@ -38,14 +38,6 @@ export default function DoctorIntro() {
                     </div>
                   </div>
                 </div>
-              </div>
-
-              {/* Decorative Accent Badge */}
-              <div className="hidden sm:flex absolute -bottom-5 -right-5 bg-navy-dark text-white p-4 rounded-xl shadow-elevated border border-teal/40 max-w-[220px] items-start gap-3">
-                <HeartHandshake className="w-5 h-5 text-teal shrink-0 mt-0.5" />
-                <p className="text-xs text-white/90 leading-snug">
-                  Ethical, patient-centred decisions before surgical recommendations.
-                </p>
               </div>
 
             </div>
