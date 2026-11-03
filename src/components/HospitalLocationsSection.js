@@ -42,9 +42,9 @@ export default function HospitalLocationsSection() {
                 </div>
 
                 {/* Location Image */}
-                <div className="relative w-full h-44 rounded-xl overflow-hidden bg-neutral-100 border border-neutral-border">
+                <div className="relative w-full h-52 rounded-xl overflow-hidden bg-neutral-100 border border-neutral-border">
                   <Image
-                    src={idx === 0 ? doctorData.photos.clinic1 : doctorData.photos.clinic2}
+                    src={loc.image}
                     alt={loc.name}
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
