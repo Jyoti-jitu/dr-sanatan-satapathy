@@ -131,19 +131,6 @@ export default function SpineFeature() {
                 </div>
               </div>
             </div>
-
-            {/* Quick Stat Overlay */}
-            <div className="absolute top-2 left-2 sm:-top-4 sm:-left-6 bg-white p-2.5 sm:p-4 rounded-xl shadow-card border border-neutral-border max-w-[150px] sm:max-w-[200px]">
-              <p className="text-lg sm:text-2xl font-heading font-extrabold text-teal">
-                &lt; 10 mm
-              </p>
-              <p className="text-[10px] sm:text-xs font-semibold text-navy-heading mt-0.5">
-                Keyhole Portal
-              </p>
-              <p className="text-[9px] sm:text-[10px] text-neutral-body mt-0.5 leading-tight">
-                Typical incision dimension in endoscopic discectomy.
-              </p>
-            </div>
           </div>
 
         </div>
