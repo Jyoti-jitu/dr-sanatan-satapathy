@@ -21,14 +21,14 @@ export default function AwardsSection() {
         </div>
 
         {/* Featured Award Showcase Card */}
-        <div className="bg-gradient-to-br from-navy-dark via-navy to-navy-dark text-white rounded-3xl p-8 sm:p-12 border border-teal/40 shadow-elevated relative overflow-hidden mb-12">
+        <div className="bg-gradient-to-br from-navy-dark via-navy to-navy-dark text-white rounded-2xl sm:rounded-3xl p-5 sm:p-8 lg:p-12 border border-teal/40 shadow-elevated relative overflow-hidden mb-12">
           {/* Subtle gold glow */}
           <div className="absolute top-0 right-0 w-80 h-80 bg-gold/15 rounded-full blur-3xl pointer-events-none" />
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
             
             {/* Award Icon Badge (4 cols) */}
-            <div className="lg:col-span-4 flex flex-col items-center justify-center p-8 rounded-2xl bg-white/5 border border-white/10 text-center">
+            <div className="lg:col-span-4 flex flex-col items-center justify-center p-5 sm:p-8 rounded-2xl bg-white/5 border border-white/10 text-center">
               <div className="w-20 h-20 rounded-full bg-gold/20 border-2 border-gold flex items-center justify-center text-gold mb-4 shadow-lg">
                 <Award className="w-10 h-10" />
               </div>

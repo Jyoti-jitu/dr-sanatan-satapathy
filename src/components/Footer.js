@@ -173,7 +173,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-navy/80 bg-deep-navy/80 py-6 text-xs text-white/60">
+      <div className="border-t border-navy/80 bg-deep-navy/80 py-6 pb-24 lg:pb-6 text-xs text-white/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
           <p>
             &copy; {new Date().getFullYear()} Dr. Sanatan Satapathy. All rights reserved. Medical content published for patient educational awareness.

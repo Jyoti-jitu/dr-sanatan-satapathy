@@ -35,10 +35,10 @@ export default function ConditionsSection() {
           </div>
 
           {/* Filter Pills */}
-          <div className="flex items-center gap-2 self-start md:self-auto bg-white p-1.5 rounded-xl border border-neutral-border shadow-subtle">
+          <div className="flex flex-wrap sm:flex-nowrap items-center gap-1.5 sm:gap-2 self-start md:self-auto bg-white p-1.5 rounded-xl border border-neutral-border shadow-subtle max-w-full">
             <button
               onClick={() => setFilter("all")}
-              className={`px-4 py-2 rounded-lg text-xs font-semibold transition-colors ${
+              className={`px-3 sm:px-4 py-2 rounded-lg text-xs font-semibold transition-colors shrink-0 ${
                 filter === "all"
                   ? "bg-navy text-white shadow-sm"
                   : "text-neutral-body hover:text-navy-heading"
@@ -48,7 +48,7 @@ export default function ConditionsSection() {
             </button>
             <button
               onClick={() => setFilter("spine")}
-              className={`px-4 py-2 rounded-lg text-xs font-semibold transition-colors ${
+              className={`px-3 sm:px-4 py-2 rounded-lg text-xs font-semibold transition-colors shrink-0 ${
                 filter === "spine"
                   ? "bg-navy text-white shadow-sm"
                   : "text-neutral-body hover:text-navy-heading"
@@ -58,7 +58,7 @@ export default function ConditionsSection() {
             </button>
             <button
               onClick={() => setFilter("brain")}
-              className={`px-4 py-2 rounded-lg text-xs font-semibold transition-colors ${
+              className={`px-3 sm:px-4 py-2 rounded-lg text-xs font-semibold transition-colors shrink-0 ${
                 filter === "brain"
                   ? "bg-navy text-white shadow-sm"
                   : "text-neutral-body hover:text-navy-heading"

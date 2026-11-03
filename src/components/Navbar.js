@@ -254,8 +254,8 @@ export default function Navbar() {
 
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-0 top-[110px] bg-white z-40 overflow-y-auto border-t border-neutral-border animate-in fade-in duration-200">
-          <div className="px-6 py-6 space-y-4">
+        <div className="lg:hidden absolute top-full left-0 right-0 h-[calc(100dvh-100%)] max-h-[calc(100vh-64px)] bg-white z-40 overflow-y-auto border-t border-neutral-border shadow-2xl animate-in fade-in duration-200">
+          <div className="px-6 py-6 pb-24 space-y-4">
             <nav className="space-y-1">
               <Link
                 href="/"

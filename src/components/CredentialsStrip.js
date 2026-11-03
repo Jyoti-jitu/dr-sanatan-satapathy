@@ -5,10 +5,10 @@ export default function CredentialsStrip() {
   return (
     <section className="bg-white border-b border-neutral-border py-6 relative z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 divide-y lg:divide-y-0 lg:divide-x divide-neutral-border">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 lg:divide-x lg:divide-neutral-border">
           
           {/* Item 1 */}
-          <div className="flex items-start gap-3.5 pt-4 lg:pt-0 lg:px-4 first:pt-0 first:lg:pl-0">
+          <div className="flex items-start gap-3.5 p-3 sm:p-0 rounded-xl bg-neutral-offwhite/50 sm:bg-transparent border border-neutral-border/60 sm:border-0 lg:px-4 first:lg:pl-0">
             <div className="p-2.5 rounded-xl bg-teal-light text-teal shrink-0">
               <GraduationCap className="w-5 h-5" />
             </div>
@@ -22,7 +22,7 @@ export default function CredentialsStrip() {
           </div>
 
           {/* Item 2 */}
-          <div className="flex items-start gap-3.5 pt-4 lg:pt-0 lg:px-4">
+          <div className="flex items-start gap-3.5 p-3 sm:p-0 rounded-xl bg-neutral-offwhite/50 sm:bg-transparent border border-neutral-border/60 sm:border-0 lg:px-4">
             <div className="p-2.5 rounded-xl bg-teal-light text-teal shrink-0">
               <Stethoscope className="w-5 h-5" />
             </div>
@@ -36,7 +36,7 @@ export default function CredentialsStrip() {
           </div>
 
           {/* Item 3 */}
-          <div className="flex items-start gap-3.5 pt-4 lg:pt-0 lg:px-4">
+          <div className="flex items-start gap-3.5 p-3 sm:p-0 rounded-xl bg-neutral-offwhite/50 sm:bg-transparent border border-neutral-border/60 sm:border-0 lg:px-4">
             <div className="p-2.5 rounded-xl bg-teal-light text-teal shrink-0">
               <Award className="w-5 h-5 text-gold" />
             </div>
@@ -50,7 +50,7 @@ export default function CredentialsStrip() {
           </div>
 
           {/* Item 4 */}
-          <div className="flex items-start gap-3.5 pt-4 lg:pt-0 lg:px-4">
+          <div className="flex items-start gap-3.5 p-3 sm:p-0 rounded-xl bg-neutral-offwhite/50 sm:bg-transparent border border-neutral-border/60 sm:border-0 lg:px-4">
             <div className="p-2.5 rounded-xl bg-teal-light text-teal shrink-0">
               <Building2 className="w-5 h-5" />
             </div>

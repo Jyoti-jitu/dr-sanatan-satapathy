@@ -28,7 +28,7 @@ export default function TimelineSection() {
               <div className="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-white border-4 border-teal shadow-sm" />
 
               {/* Institution / Stage Tag (Left on desktop) */}
-              <div className="sm:absolute sm:-left-36 sm:top-1 sm:w-28 sm:text-right">
+              <div className="mb-2 sm:mb-0 sm:absolute sm:-left-36 sm:top-1 sm:w-28 sm:text-right">
                 <span className="inline-block px-2.5 py-1 rounded bg-white border border-neutral-border text-[11px] font-bold text-navy-heading">
                   {item.year}
                 </span>

@@ -13,18 +13,18 @@ export default function Hero() {
       <div className="absolute -top-40 right-0 w-96 h-96 bg-teal-light rounded-full blur-3xl opacity-50 pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
           
           {/* Left Editorial Content (7 cols on lg) */}
-          <div className="lg:col-span-7 space-y-6 text-left">
+          <div className="lg:col-span-7 flex flex-col justify-start space-y-6 text-left">
             
-            {/* Eyebrow */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-light border border-teal/20 text-teal text-xs font-bold tracking-wider uppercase">
+            {/* Eyebrow - Perfectly aligned with right pill */}
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-light border border-teal/20 text-teal text-xs font-bold tracking-wider uppercase w-fit">
               <span className="w-2 h-2 rounded-full bg-teal animate-pulse" />
               <span>Brain & Spine Specialist</span>
             </div>
 
-            {/* Main Headline */}
+            {/* Main Headline - Starts at same baseline as Doctor Photo */}
             <h1 className="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl text-navy-heading leading-[1.18] tracking-tight">
               Behind Every Diagnosis Is a Life. <br className="hidden sm:inline" />
               <span className="text-teal">Behind Every Treatment, a Responsibility.</span>
@@ -36,7 +36,7 @@ export default function Hero() {
             </p>
 
             {/* Action Buttons */}
-            <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5">
+            <div className="pt-1 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5">
               <Link
                 href="/contact"
                 className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-teal hover:bg-teal-dark text-white font-semibold text-base shadow-sm hover:shadow-md transition-all group"
@@ -55,7 +55,7 @@ export default function Hero() {
             </div>
 
             {/* Trust line */}
-            <div className="pt-3 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs font-medium text-neutral-body border-t border-neutral-border/70">
+            <div className="pt-4 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs font-medium text-neutral-body border-t border-neutral-border/70">
               <div className="flex items-center gap-1.5 text-navy-heading">
                 <MapPin className="w-4 h-4 text-teal" />
                 <span>Bhubaneswar, Odisha</span>
@@ -75,20 +75,11 @@ export default function Hero() {
           </div>
 
           {/* Right Visual Composition (5 cols on lg) */}
-          <div className="lg:col-span-5 relative flex flex-col items-center lg:items-end justify-center">
-            
-            {/* Verified Specialist Pill positioned ABOVE the hero image */}
-            <div className="w-full max-w-md mb-3 flex items-center justify-start">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white shadow-sm border border-neutral-border text-navy-heading text-xs font-bold">
-                <CheckCircle2 className="w-4 h-4 text-teal shrink-0" />
-                <span>Verified Specialist • Registered Neurosurgeon</span>
-              </div>
-            </div>
-
-            <div className="relative w-full max-w-md">
+          <div className="lg:col-span-5 flex flex-col items-center lg:items-end justify-start">
+            <div className="relative w-full max-w-[380px]">
               
-              {/* Decorative subtle border frame */}
-              <div className="absolute -inset-2 rounded-3xl bg-gradient-to-tr from-teal/20 via-transparent to-navy/10 transform rotate-1" />
+              {/* Clean non-rotated decorative border frame */}
+              <div className="absolute -inset-1 rounded-2xl bg-gradient-to-tr from-teal/20 via-transparent to-navy/10" />
               
               {/* Doctor Portrait Card */}
               <div className="relative rounded-2xl overflow-hidden bg-white shadow-elevated border border-neutral-border">
@@ -98,7 +89,7 @@ export default function Hero() {
                     alt={`${doctorData.name} - Senior Neurosurgeon & Spine Surgeon in Bhubaneswar`}
                     fill
                     priority
-                    sizes="(max-width: 768px) 100vw, 450px"
+                    sizes="(max-width: 768px) 100vw, 380px"
                     className="object-cover object-top"
                   />
                 </div>
@@ -125,4 +116,3 @@ export default function Hero() {
     </section>
   );
 }
-

@@ -133,8 +133,8 @@ export default function SpineFeature() {
             </div>
 
             {/* Quick Stat Overlay */}
-            <div className="absolute -top-4 -left-4 sm:-left-6 bg-white p-4 rounded-xl shadow-card border border-neutral-border max-w-[200px]">
-              <p className="text-2xl font-heading font-extrabold text-teal">
+            <div className="absolute top-3 left-3 sm:-top-4 sm:-left-6 bg-white p-3.5 sm:p-4 rounded-xl shadow-card border border-neutral-border max-w-[180px] sm:max-w-[200px]">
+              <p className="text-xl sm:text-2xl font-heading font-extrabold text-teal">
                 &lt; 10 mm
               </p>
               <p className="text-xs font-semibold text-navy-heading mt-0.5">
