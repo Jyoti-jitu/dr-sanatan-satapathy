@@ -14,16 +14,16 @@ export default function ContactPage({ searchParams }) {
   return (
     <div className="bg-white">
       {/* Header */}
-      <section className="bg-neutral-offwhite border-b border-neutral-border py-16 lg:py-20">
+      <section className="bg-neutral-offwhite border-b border-neutral-border py-8 sm:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl space-y-4">
-            <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-teal-light text-teal">
+          <div className="max-w-3xl space-y-2 sm:space-y-4">
+            <span className="inline-block px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full text-[10px] sm:text-xs font-bold uppercase tracking-wider bg-teal-light text-teal">
               Patient Coordination & Appointments
             </span>
-            <h1 className="font-heading font-extrabold text-4xl sm:text-5xl text-navy-heading leading-tight">
+            <h1 className="font-heading font-extrabold text-2xl sm:text-4xl lg:text-5xl text-navy-heading leading-tight">
               Contact & Book Consultation
             </h1>
-            <p className="editorial-lead text-neutral-body">
+            <p className="text-neutral-body text-xs sm:text-base lg:text-lg leading-relaxed">
               Reserve an in-person outpatient clinical evaluation with Dr. Sanatan Satapathy at MAX Super Speciality Hospital (Formerly Kalinga Hospital) in Bhubaneswar.
             </p>
           </div>
@@ -33,7 +33,7 @@ export default function ContactPage({ searchParams }) {
       {/* Main Content: Form + Information Grid */}
       <section className="section-padding">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-12 lg:gap-16 items-start">
             
             {/* Left: Real Appointment Enquiry Form (7 cols) */}
             <div className="lg:col-span-7">
@@ -41,11 +41,11 @@ export default function ContactPage({ searchParams }) {
             </div>
 
             {/* Right: Contact Information & OPD Centers (5 cols) */}
-            <div className="lg:col-span-5 space-y-8">
+            <div className="lg:col-span-5 space-y-6 sm:space-y-8">
               
               {/* Direct Calling & Messaging Cards */}
-              <div className="p-6 rounded-2xl bg-neutral-offwhite border border-neutral-border space-y-4">
-                <h3 className="font-heading font-bold text-lg text-navy-heading">
+              <div className="p-4 sm:p-6 rounded-2xl bg-neutral-offwhite border border-neutral-border space-y-3 sm:space-y-4">
+                <h3 className="font-heading font-bold text-base sm:text-lg text-navy-heading">
                   Direct Clinical Desk
                 </h3>
 

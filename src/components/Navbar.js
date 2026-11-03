@@ -74,15 +74,15 @@ export default function Navbar() {
     <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-white/95 backdrop-blur-md shadow-subtle border-b border-neutral-border py-3"
-          : "bg-white py-4 border-b border-neutral-border/60"
+          ? "bg-white/95 backdrop-blur-md shadow-subtle border-b border-neutral-border py-2 sm:py-2.5"
+          : "bg-white py-2.5 sm:py-3.5 border-b border-neutral-border/60"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo / Brand Wordmark */}
-          <Link href="/" className="group flex items-center gap-3">
-            <div className="relative w-11 h-11 sm:w-12 sm:h-12 rounded-full overflow-hidden shadow-sm shrink-0 border border-neutral-border group-hover:border-teal transition-colors bg-white">
+          <Link href="/" className="group flex items-center gap-2.5 sm:gap-3">
+            <div className="relative w-9 h-9 sm:w-11 sm:h-11 rounded-full overflow-hidden shadow-sm shrink-0 border border-neutral-border group-hover:border-teal transition-colors bg-white">
               <Image
                 src="/images/logo.png"
                 alt="Dr. Sanatan Satapathy - Neurosurgeon Logo"
@@ -92,10 +92,10 @@ export default function Navbar() {
               />
             </div>
             <div className="flex flex-col">
-              <span className="font-heading font-bold text-lg sm:text-xl text-navy-heading tracking-tight group-hover:text-teal transition-colors leading-tight">
+              <span className="font-heading font-bold text-base sm:text-xl text-navy-heading tracking-tight group-hover:text-teal transition-colors leading-tight">
                 Dr. Sanatan Satapathy
               </span>
-              <span className="text-[11px] sm:text-xs font-medium text-teal tracking-wider uppercase">
+              <span className="text-[10px] sm:text-xs font-medium text-teal tracking-wider uppercase">
                 MCh Neurosurgery | Spine Specialist
               </span>
             </div>

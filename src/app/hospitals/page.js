@@ -14,16 +14,16 @@ export default function HospitalsPage() {
   return (
     <div className="bg-white">
       {/* Header */}
-      <section className="bg-neutral-offwhite border-b border-neutral-border py-16 lg:py-20">
+      <section className="bg-neutral-offwhite border-b border-neutral-border py-8 sm:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl space-y-4">
-            <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-teal-light text-teal">
+          <div className="max-w-3xl space-y-2 sm:space-y-4">
+            <span className="inline-block px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full text-[10px] sm:text-xs font-bold uppercase tracking-wider bg-teal-light text-teal">
               Hospital Affiliations & OPD Centers
             </span>
-            <h1 className="font-heading font-extrabold text-4xl sm:text-5xl text-navy-heading leading-tight">
+            <h1 className="font-heading font-extrabold text-2xl sm:text-4xl lg:text-5xl text-navy-heading leading-tight">
               Consultation Locations
             </h1>
-            <p className="editorial-lead text-neutral-body">
+            <p className="text-neutral-body text-xs sm:text-base lg:text-lg leading-relaxed">
               Dr. Sanatan Satapathy consults and operates at premier tertiary healthcare institutions in Bhubaneswar, equipped with modern neurosurgical theatres and dedicated neuro-intensive care units.
             </p>
           </div>
@@ -32,27 +32,27 @@ export default function HospitalsPage() {
 
       {/* Hospital Locations List */}
       <section className="section-padding">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 sm:space-y-12">
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8 max-w-6xl mx-auto">
             {locationsData.map((loc) => (
               <div
                 key={loc.id}
-                className="bg-white rounded-2xl border border-neutral-border p-6 sm:p-8 flex flex-col justify-between shadow-subtle hover:shadow-card transition-shadow space-y-6"
+                className="bg-white rounded-2xl border border-neutral-border p-4 sm:p-6 lg:p-8 flex flex-col justify-between shadow-subtle hover:shadow-card transition-shadow space-y-4 sm:space-y-6"
               >
-                <div className="space-y-4">
+                <div className="space-y-3 sm:space-y-4">
                   {/* Badge Header */}
                   <div className="flex items-center justify-between">
-                    <span className="px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-teal-light text-teal border border-teal/20">
+                    <span className="px-2.5 py-1 sm:px-3.5 sm:py-1.5 rounded-full text-[10px] sm:text-xs font-bold uppercase tracking-wider bg-teal-light text-teal border border-teal/20">
                       {loc.badge}
                     </span>
-                    <span className="text-[11px] text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">
+                    <span className="text-[10px] sm:text-[11px] text-emerald-700 bg-emerald-50 px-2 sm:px-2.5 py-0.5 rounded-full border border-emerald-200">
                       Verified Location
                     </span>
                   </div>
 
                   {/* Location Image */}
-                  <div className="relative w-full h-52 sm:h-56 rounded-xl overflow-hidden bg-neutral-100 border border-neutral-border">
+                  <div className="relative w-full h-40 sm:h-48 lg:h-56 rounded-xl overflow-hidden bg-neutral-100 border border-neutral-border">
                     <Image
                       src={loc.image}
                       alt={loc.name}
@@ -63,14 +63,14 @@ export default function HospitalsPage() {
                   </div>
 
                   {/* Name & Titles */}
-                  <div className="space-y-1">
-                    <h2 className="font-heading font-bold text-xl sm:text-2xl text-navy-heading leading-snug">
+                  <div className="space-y-0.5 sm:space-y-1">
+                    <h2 className="font-heading font-bold text-base sm:text-xl lg:text-2xl text-navy-heading leading-snug">
                       {loc.name}
                     </h2>
                     <p className="text-xs sm:text-sm font-semibold text-teal">
                       {loc.designation}
                     </p>
-                    <p className="text-xs text-neutral-body">
+                    <p className="text-[11px] sm:text-xs text-neutral-body">
                       {loc.tagline}
                     </p>
                   </div>

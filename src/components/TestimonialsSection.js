@@ -13,8 +13,8 @@ export default function TestimonialsSection() {
 
   const getCardStep = () => {
     if (typeof window === "undefined") return 360;
-    if (window.innerWidth < 640) return 305; // 290 + 15 gap
-    if (window.innerWidth < 768) return 345; // 330 + 15 gap
+    if (window.innerWidth < 640) return 275; // 260 + 15 gap
+    if (window.innerWidth < 768) return 335; // 320 + 15 gap
     return 370; // 350 + 20 gap
   };
 
@@ -80,22 +80,22 @@ export default function TestimonialsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header with Controls */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
-          <div className="max-w-2xl space-y-2.5">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-light border border-teal/20 text-teal text-xs font-bold uppercase tracking-wider">
-              <span className="w-2 h-2 rounded-full bg-teal animate-pulse" />
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 sm:gap-6 mb-6 sm:mb-8">
+          <div className="max-w-2xl space-y-1.5 sm:space-y-2.5">
+            <div className="inline-flex items-center gap-1.5 sm:gap-2 px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full bg-teal-light border border-teal/20 text-teal text-[10px] sm:text-xs font-bold uppercase tracking-wider">
+              <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-teal animate-pulse" />
               <span>Clinical Perspectives</span>
             </div>
             <h2 className="font-heading font-extrabold text-2xl sm:text-3xl lg:text-4xl text-navy-heading leading-tight">
               Experiences Shared by Patients.
             </h2>
-            <p className="text-neutral-body text-sm sm:text-base">
+            <p className="text-neutral-body text-xs sm:text-base leading-relaxed">
               Verified clinical reviews and recovery reflections from patients and families treated under Dr. Sanatan Satapathy.
             </p>
           </div>
 
           {/* Desktop Auto-Scroll Status & Nav Arrows */}
-          <div className="flex items-center gap-3 shrink-0">
+          <div className="flex items-center gap-2.5 sm:gap-3 shrink-0">
             <div className="hidden sm:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-neutral-offwhite border border-neutral-border text-[11px] text-neutral-body">
               <span className={`w-1.5 h-1.5 rounded-full ${isHovered ? "bg-amber-400" : "bg-emerald-500 animate-pulse"}`} />
               <span>{isHovered ? "Paused" : "Auto-scroll"}</span>
@@ -109,7 +109,7 @@ export default function TestimonialsSection() {
               onClick={() => scroll("left")}
               disabled={!canScrollLeft}
               aria-label="Previous testimonial"
-              className={`p-2.5 rounded-xl border transition-all ${
+              className={`p-2 sm:p-2.5 rounded-xl border transition-all ${
                 canScrollLeft
                   ? "border-neutral-border bg-white text-navy-heading hover:border-teal hover:bg-teal-light/40 shadow-sm cursor-pointer"
                   : "border-neutral-border/40 bg-neutral-50 text-neutral-300 cursor-not-allowed"
@@ -121,7 +121,7 @@ export default function TestimonialsSection() {
               onClick={() => scroll("right")}
               disabled={!canScrollRight}
               aria-label="Next testimonial"
-              className={`p-2.5 rounded-xl border transition-all ${
+              className={`p-2 sm:p-2.5 rounded-xl border transition-all ${
                 canScrollRight
                   ? "border-neutral-border bg-white text-navy-heading hover:border-teal hover:bg-teal-light/40 shadow-sm cursor-pointer"
                   : "border-neutral-border/40 bg-neutral-50 text-neutral-300 cursor-not-allowed"
@@ -139,12 +139,12 @@ export default function TestimonialsSection() {
           onMouseLeave={() => setIsHovered(false)}
           onTouchStart={() => setIsHovered(true)}
           onTouchEnd={() => setIsHovered(false)}
-          className="flex gap-5 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-3 pt-1 -mx-4 px-4 sm:mx-0 sm:px-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
+          className="flex gap-4 sm:gap-5 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-3 pt-1 -mx-4 px-4 sm:mx-0 sm:px-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
         >
           {testimonialsData.map((item, index) => (
             <div
               key={index}
-              className="w-[290px] sm:w-[330px] md:w-[350px] shrink-0 snap-start bg-neutral-offwhite rounded-2xl p-5 sm:p-6 border border-neutral-border hover:border-teal/40 hover:shadow-card transition-all flex flex-col justify-between space-y-4"
+              className="w-[260px] sm:w-[320px] md:w-[350px] shrink-0 snap-start bg-neutral-offwhite rounded-2xl p-4 sm:p-6 border border-neutral-border hover:border-teal/40 hover:shadow-card transition-all flex flex-col justify-between space-y-3 sm:space-y-4"
             >
               <div className="space-y-3">
                 {/* Compact Header: 5 Stars + Verified Tag */}

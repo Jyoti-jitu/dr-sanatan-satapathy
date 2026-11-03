@@ -8,50 +8,50 @@ export default function AwardsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
-        <div className="max-w-3xl space-y-3 mb-14">
-          <p className="text-xs font-bold text-teal uppercase tracking-widest">
+        <div className="max-w-3xl space-y-1.5 sm:space-y-3 mb-8 sm:mb-14">
+          <p className="text-[10px] sm:text-xs font-bold text-teal uppercase tracking-widest">
             Peer & Clinical Distinction
           </p>
-          <h2 className="font-heading font-extrabold text-3xl sm:text-4xl text-navy-heading leading-tight">
+          <h2 className="font-heading font-extrabold text-2xl sm:text-3xl lg:text-4xl text-navy-heading leading-tight">
             Professional Recognition.
           </h2>
-          <p className="editorial-lead text-neutral-body text-base">
+          <p className="text-xs sm:text-base text-neutral-body leading-relaxed">
             Recognizing dedication to super-speciality neurosurgical standards, patient outcomes, and advancing endoscopic spine access in Odisha.
           </p>
         </div>
 
         {/* Featured Award Showcase Card */}
-        <div className="bg-gradient-to-br from-navy-dark via-navy to-navy-dark text-white rounded-2xl sm:rounded-3xl p-5 sm:p-8 lg:p-12 border border-teal/40 shadow-elevated relative overflow-hidden mb-12">
+        <div className="bg-gradient-to-br from-navy-dark via-navy to-navy-dark text-white rounded-2xl sm:rounded-3xl p-4 sm:p-8 lg:p-12 border border-teal/40 shadow-elevated relative overflow-hidden mb-8 sm:mb-12">
           {/* Subtle gold glow */}
           <div className="absolute top-0 right-0 w-80 h-80 bg-gold/15 rounded-full blur-3xl pointer-events-none" />
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center relative z-10">
             
             {/* Award Icon Badge (4 cols) */}
-            <div className="lg:col-span-4 flex flex-col items-center justify-center p-5 sm:p-8 rounded-2xl bg-white/5 border border-white/10 text-center">
-              <div className="w-20 h-20 rounded-full bg-gold/20 border-2 border-gold flex items-center justify-center text-gold mb-4 shadow-lg">
-                <Award className="w-10 h-10" />
+            <div className="lg:col-span-4 flex flex-col items-center justify-center p-4 sm:p-8 rounded-2xl bg-white/5 border border-white/10 text-center">
+              <div className="w-14 h-14 sm:w-20 sm:h-20 rounded-full bg-gold/20 border-2 border-gold flex items-center justify-center text-gold mb-3 sm:mb-4 shadow-lg">
+                <Award className="w-7 h-7 sm:w-10 sm:h-10" />
               </div>
-              <span className="px-3.5 py-1 rounded-full text-xs font-bold bg-gold text-navy-dark uppercase tracking-wider mb-2">
+              <span className="px-3 py-0.5 sm:px-3.5 sm:py-1 rounded-full text-[10px] sm:text-xs font-bold bg-gold text-navy-dark uppercase tracking-wider mb-1.5 sm:mb-2">
                 Times Health Icon 2024
               </span>
-              <p className="text-xs text-white/70">
+              <p className="text-[11px] sm:text-xs text-white/70">
                 Times of India Group Regional Healthcare Awards
               </p>
             </div>
 
             {/* Award Description (8 cols) */}
-            <div className="lg:col-span-8 space-y-4 text-left">
+            <div className="lg:col-span-8 space-y-3 sm:space-y-4 text-left">
               <div className="space-y-1">
-                <p className="text-xs font-semibold uppercase tracking-wider text-teal-light">
+                <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-teal-light">
                   Excellence in Neurosurgery & Spine Surgery
                 </p>
-                <h3 className="font-heading font-bold text-2xl sm:text-3xl text-white">
+                <h3 className="font-heading font-bold text-lg sm:text-2xl lg:text-3xl text-white">
                   Times Health ICON Award 2024
                 </h3>
               </div>
 
-              <p className="text-sm sm:text-base text-white/80 leading-relaxed">
+              <p className="text-xs sm:text-sm lg:text-base text-white/80 leading-relaxed">
                 Awarded in recognition of Dr. Sanatan Satapathy's clinical expertise, commitment to minimally invasive and endoscopic spine approaches, and ongoing dedication to delivering patient-centric neurosurgical care across Eastern India.
               </p>
 

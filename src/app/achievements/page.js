@@ -13,16 +13,16 @@ export default function AchievementsPage() {
   return (
     <div className="bg-white">
       {/* Header */}
-      <section className="bg-neutral-offwhite border-b border-neutral-border py-16 lg:py-20">
+      <section className="bg-neutral-offwhite border-b border-neutral-border py-8 sm:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl space-y-4">
-            <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-teal-light text-teal">
+          <div className="max-w-3xl space-y-2 sm:space-y-4">
+            <span className="inline-block px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full text-[10px] sm:text-xs font-bold uppercase tracking-wider bg-teal-light text-teal">
               Clinical Milestones & Honors
             </span>
-            <h1 className="font-heading font-extrabold text-4xl sm:text-5xl text-navy-heading leading-tight">
+            <h1 className="font-heading font-extrabold text-2xl sm:text-4xl lg:text-5xl text-navy-heading leading-tight">
               Awards & Professional Achievements
             </h1>
-            <p className="editorial-lead text-neutral-body">
+            <p className="text-neutral-body text-xs sm:text-base lg:text-lg leading-relaxed">
               Verified clinical distinctions, academic fellowships, and professional milestones earned across fifteen years of neurosurgical dedication in Odisha.
             </p>
           </div>
@@ -31,17 +31,17 @@ export default function AchievementsPage() {
 
       {/* Main Content */}
       <section className="section-padding">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 sm:space-y-16">
           
           {/* Featured Award: Times Health Icon 2024 */}
-          <div className="bg-gradient-to-br from-navy-dark via-navy to-navy-dark text-white rounded-3xl p-8 sm:p-12 border border-teal/40 shadow-elevated relative overflow-hidden">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div className="bg-gradient-to-br from-navy-dark via-navy to-navy-dark text-white rounded-2xl sm:rounded-3xl p-4 sm:p-8 lg:p-12 border border-teal/40 shadow-elevated relative overflow-hidden">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center">
               
-              <div className="lg:col-span-4 flex flex-col items-center justify-center p-8 rounded-2xl bg-white/5 border border-white/10 text-center">
-                <div className="w-20 h-20 rounded-full bg-gold/20 border-2 border-gold flex items-center justify-center text-gold mb-4 shadow-lg">
-                  <Award className="w-10 h-10" />
+              <div className="lg:col-span-4 flex flex-col items-center justify-center p-4 sm:p-8 rounded-2xl bg-white/5 border border-white/10 text-center">
+                <div className="w-14 h-14 sm:w-20 sm:h-20 rounded-full bg-gold/20 border-2 border-gold flex items-center justify-center text-gold mb-3 sm:mb-4 shadow-lg">
+                  <Award className="w-7 h-7 sm:w-10 sm:h-10" />
                 </div>
-                <span className="px-3.5 py-1 rounded-full text-xs font-bold bg-gold text-navy-dark uppercase tracking-wider mb-2">
+                <span className="px-3 py-0.5 sm:px-3.5 sm:py-1 rounded-full text-[10px] sm:text-xs font-bold bg-gold text-navy-dark uppercase tracking-wider mb-1.5 sm:mb-2">
                   Times Health Icon 2024
                 </span>
                 <p className="text-xs text-white/70">

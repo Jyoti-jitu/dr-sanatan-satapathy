@@ -165,16 +165,16 @@ Kindly confirm available OPD slots. Thank you.`;
   }
 
   return (
-    <div className="bg-white p-6 sm:p-8 lg:p-10 rounded-2xl border border-neutral-border shadow-card">
-      <div className="mb-6">
-        <div className="flex items-center gap-2 text-xs font-semibold text-teal uppercase tracking-wider mb-1">
+    <div className="bg-white p-4 sm:p-8 lg:p-10 rounded-2xl border border-neutral-border shadow-card">
+      <div className="mb-4 sm:mb-6">
+        <div className="flex items-center gap-1.5 sm:gap-2 text-[10px] sm:text-xs font-semibold text-teal uppercase tracking-wider mb-1">
           <Calendar className="w-3.5 h-3.5" />
           <span>Outpatient Consultation Request</span>
         </div>
-        <h3 className="font-heading font-bold text-2xl text-navy-heading">
+        <h3 className="font-heading font-bold text-xl sm:text-2xl text-navy-heading">
           Book an Appointment
         </h3>
-        <p className="text-sm text-neutral-body mt-1">
+        <p className="text-xs sm:text-sm text-neutral-body mt-1">
           Schedule a clinical evaluation for brain, spine, or nerve conditions in Bhubaneswar.
         </p>
       </div>

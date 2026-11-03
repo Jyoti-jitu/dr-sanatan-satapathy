@@ -21,24 +21,24 @@ export default function ConditionsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
-          <div className="max-w-2xl space-y-3">
-            <p className="text-xs font-bold text-teal uppercase tracking-widest">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 sm:gap-6 mb-8 sm:mb-12">
+          <div className="max-w-2xl space-y-1.5 sm:space-y-3">
+            <p className="text-[10px] sm:text-xs font-bold text-teal uppercase tracking-widest">
               Patient Educational Guide
             </p>
-            <h2 className="font-heading font-extrabold text-3xl sm:text-4xl text-navy-heading leading-tight">
+            <h2 className="font-heading font-extrabold text-2xl sm:text-3xl lg:text-4xl text-navy-heading leading-tight">
               Understanding the Conditions We Treat.
             </h2>
-            <p className="text-sm sm:text-base text-neutral-body">
+            <p className="text-xs sm:text-base text-neutral-body leading-relaxed">
               Clear, medically responsible information on symptoms, diagnostics, and modern surgical versus conservative pathways.
             </p>
           </div>
 
           {/* Filter Pills */}
-          <div className="flex flex-wrap sm:flex-nowrap items-center gap-1.5 sm:gap-2 self-start md:self-auto bg-white p-1.5 rounded-xl border border-neutral-border shadow-subtle max-w-full">
+          <div className="flex flex-wrap sm:flex-nowrap items-center gap-1 sm:gap-2 self-start md:self-auto bg-white p-1 sm:p-1.5 rounded-xl border border-neutral-border shadow-subtle max-w-full">
             <button
               onClick={() => setFilter("all")}
-              className={`px-3 sm:px-4 py-2 rounded-lg text-xs font-semibold transition-colors shrink-0 ${
+              className={`px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-lg text-[11px] sm:text-xs font-semibold transition-colors shrink-0 ${
                 filter === "all"
                   ? "bg-navy text-white shadow-sm"
                   : "text-neutral-body hover:text-navy-heading"
@@ -48,7 +48,7 @@ export default function ConditionsSection() {
             </button>
             <button
               onClick={() => setFilter("spine")}
-              className={`px-3 sm:px-4 py-2 rounded-lg text-xs font-semibold transition-colors shrink-0 ${
+              className={`px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-lg text-[11px] sm:text-xs font-semibold transition-colors shrink-0 ${
                 filter === "spine"
                   ? "bg-navy text-white shadow-sm"
                   : "text-neutral-body hover:text-navy-heading"
@@ -58,7 +58,7 @@ export default function ConditionsSection() {
             </button>
             <button
               onClick={() => setFilter("brain")}
-              className={`px-3 sm:px-4 py-2 rounded-lg text-xs font-semibold transition-colors shrink-0 ${
+              className={`px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-lg text-[11px] sm:text-xs font-semibold transition-colors shrink-0 ${
                 filter === "brain"
                   ? "bg-navy text-white shadow-sm"
                   : "text-neutral-body hover:text-navy-heading"
@@ -70,23 +70,23 @@ export default function ConditionsSection() {
         </div>
 
         {/* Conditions Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {filteredConditions.map((condition) => (
             <div
               key={condition.slug}
-              className="group bg-white p-6 rounded-2xl border border-neutral-border hover:border-teal/40 shadow-subtle hover:shadow-card transition-all flex flex-col justify-between"
+              className="group bg-white p-4 sm:p-6 rounded-2xl border border-neutral-border hover:border-teal/40 shadow-subtle hover:shadow-card transition-all flex flex-col justify-between"
             >
-              <div className="space-y-3">
+              <div className="space-y-2.5 sm:space-y-3">
                 <div className="flex items-center justify-between">
-                  <span className="px-2.5 py-1 rounded-md text-[11px] font-bold uppercase tracking-wider bg-neutral-offwhite border border-neutral-border text-teal">
+                  <span className="px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-md text-[10px] sm:text-[11px] font-bold uppercase tracking-wider bg-neutral-offwhite border border-neutral-border text-teal">
                     {condition.category}
                   </span>
-                  <span className="text-[11px] text-neutral-400 font-medium">
+                  <span className="text-[10px] sm:text-[11px] text-neutral-400 font-medium">
                     {condition.scientificName.split("/")[0]}
                   </span>
                 </div>
 
-                <h3 className="font-heading font-bold text-xl text-navy-heading group-hover:text-teal transition-colors">
+                <h3 className="font-heading font-bold text-base sm:text-lg lg:text-xl text-navy-heading group-hover:text-teal transition-colors">
                   {condition.title}
                 </h3>
 

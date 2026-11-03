@@ -9,20 +9,20 @@ export default function SpecialtiesGrid() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="max-w-3xl space-y-3 mb-14">
-          <p className="text-xs font-bold text-teal uppercase tracking-widest">
+        <div className="max-w-3xl space-y-2 sm:space-y-3 mb-8 sm:mb-14">
+          <p className="text-[10px] sm:text-xs font-bold text-teal uppercase tracking-widest">
             Clinical Focus Areas
           </p>
-          <h2 className="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl text-navy-heading leading-tight">
+          <h2 className="font-heading font-extrabold text-2xl sm:text-3xl lg:text-5xl text-navy-heading leading-tight">
             Specialised Care for Complex Brain & Spine Conditions.
           </h2>
-          <p className="editorial-lead text-neutral-body text-base sm:text-lg">
+          <p className="text-neutral-body text-xs sm:text-base lg:text-lg leading-relaxed">
             High-precision surgical disciplines utilizing modern optical corridors, intraoperative monitoring, and minimally invasive techniques to achieve optimal clinical outcomes.
           </p>
         </div>
 
         {/* Editorial Grid: Asymmetrical Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {servicesData.map((service, index) => {
             const isFeatured = index === 0 || index === 2; // Brain surgery & Endoscopic spine featured
 
@@ -34,7 +34,7 @@ export default function SpecialtiesGrid() {
                 }`}
               >
                 {/* Image Section */}
-                <div className="relative w-full h-52 overflow-hidden bg-neutral-100">
+                <div className="relative w-full h-40 sm:h-48 lg:h-52 overflow-hidden bg-neutral-100">
                   <Image
                     src={service.image}
                     alt={service.title}
@@ -45,18 +45,18 @@ export default function SpecialtiesGrid() {
                   <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent opacity-40 group-hover:opacity-20 transition-opacity" />
                   
                   {/* Category Pill */}
-                  <div className="absolute top-3.5 left-3.5 px-3 py-1 rounded-full bg-white/90 backdrop-blur-sm border border-neutral-border text-[11px] font-bold text-navy-heading uppercase tracking-wider">
+                  <div className="absolute top-3 left-3 sm:top-3.5 sm:left-3.5 px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full bg-white/90 backdrop-blur-sm border border-neutral-border text-[10px] sm:text-[11px] font-bold text-navy-heading uppercase tracking-wider">
                     {index % 2 === 0 ? "Cranial Specialty" : "Spinal Discipline"}
                   </div>
                 </div>
 
                 {/* Content Section */}
-                <div className="p-6 flex-grow flex flex-col justify-between space-y-4">
-                  <div className="space-y-2">
-                    <h3 className="font-heading font-bold text-xl text-navy-heading group-hover:text-teal transition-colors">
+                <div className="p-4 sm:p-6 flex-grow flex flex-col justify-between space-y-3 sm:space-y-4">
+                  <div className="space-y-1.5 sm:space-y-2">
+                    <h3 className="font-heading font-bold text-base sm:text-lg lg:text-xl text-navy-heading group-hover:text-teal transition-colors">
                       {service.title}
                     </h3>
-                    <p className="text-xs font-medium text-teal leading-snug">
+                    <p className="text-[11px] sm:text-xs font-medium text-teal leading-snug">
                       {service.subtitle}
                     </p>
                     <p className="text-xs text-neutral-body leading-relaxed line-clamp-3">

@@ -13,19 +13,19 @@ export default function AboutPage() {
   return (
     <div className="bg-white">
       {/* Editorial Header */}
-      <section className="bg-neutral-offwhite border-b border-neutral-border py-16 lg:py-20">
+      <section className="bg-neutral-offwhite border-b border-neutral-border py-8 sm:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl space-y-4">
-            <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-teal-light text-teal">
+          <div className="max-w-3xl space-y-2 sm:space-y-4">
+            <span className="inline-block px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full text-[10px] sm:text-xs font-bold uppercase tracking-wider bg-teal-light text-teal">
               Doctor Profile & Biography
             </span>
-            <h1 className="font-heading font-extrabold text-4xl sm:text-5xl text-navy-heading leading-tight">
+            <h1 className="font-heading font-extrabold text-2xl sm:text-4xl lg:text-5xl text-navy-heading leading-tight">
               Dr. Sanatan Satapathy
             </h1>
-            <p className="text-lg text-teal font-medium">
+            <p className="text-sm sm:text-lg text-teal font-medium">
               MBBS, MS (General Surgery), MCh (Neurosurgery)
             </p>
-            <p className="editorial-lead text-neutral-body">
+            <p className="text-neutral-body text-xs sm:text-base lg:text-lg leading-relaxed">
               {doctorData.subTagline}
             </p>
           </div>
@@ -35,33 +35,33 @@ export default function AboutPage() {
       {/* Main Narrative & Portrait */}
       <section className="section-padding">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-12 lg:gap-16 items-start">
             
             {/* Left Portrait & Credentials Card (5 cols) */}
-            <div className="lg:col-span-5 space-y-6">
-              <div className="relative rounded-2xl overflow-hidden bg-neutral-100 border border-neutral-border shadow-card">
+            <div className="lg:col-span-5 space-y-4 sm:space-y-6">
+              <div className="relative mx-auto max-w-[240px] sm:max-w-sm lg:max-w-none rounded-2xl overflow-hidden bg-neutral-100 border border-neutral-border shadow-card">
                 <div className="relative w-full aspect-[4/5]">
                   <Image
                     src={doctorData.photos.clinic1}
                     alt={doctorData.formalName}
                     fill
                     priority
-                    sizes="(max-width: 1024px) 100vw, 480px"
+                    sizes="(max-width: 1024px) 240px, 480px"
                     className="object-cover object-top"
                   />
                 </div>
-                <div className="p-5 bg-white border-t border-neutral-border space-y-2">
-                  <p className="font-heading font-bold text-navy-heading text-base">
+                <div className="p-3.5 sm:p-5 bg-white border-t border-neutral-border space-y-1 sm:space-y-2">
+                  <p className="font-heading font-bold text-navy-heading text-sm sm:text-base">
                     Clinical Appointment
                   </p>
-                  <p className="text-xs text-neutral-body">
+                  <p className="text-[11px] sm:text-xs text-neutral-body">
                     Senior Consultant Neurosurgeon & Spine Surgeon, MAX Super Speciality Hospital (Formerly Kalinga Hospital), Nalco Square, Chandrasekharpur, Bhubaneswar.
                   </p>
                 </div>
               </div>
 
               {/* Verified Credentials Box */}
-              <div className="p-6 rounded-2xl bg-neutral-offwhite border border-neutral-border space-y-3">
+              <div className="p-4 sm:p-6 rounded-2xl bg-neutral-offwhite border border-neutral-border space-y-2 sm:space-y-3">
                 <h4 className="font-heading font-bold text-sm text-navy-heading uppercase tracking-wider">
                   Verified Academic Degrees
                 </h4>
