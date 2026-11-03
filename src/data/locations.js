@@ -24,6 +24,27 @@ export const locationsData = [
       "Dedicated 24/7 Neuro-Intensive Care Unit (NICU)",
       "Comprehensive Neuro-Radiology: 1.5T/3T MRI & High-Speed CT"
     ]
+  },
+  {
+    id: "specialist-consultation-clinic",
+    name: "Specialist OPD & Consultation Clinic",
+    shortName: "Specialist Consultation Clinic",
+    tagline: "Private Outpatient & Scan Review Clinic",
+    designation: "Senior Neuro & Spine Care Specialist",
+    image: "/images/hospitals/specialist-consultation-clinic.jpg",
+    address: "Chandrasekharpur / Near Nalco Square, Bhubaneswar, Odisha 751023",
+    city: "Bhubaneswar",
+    state: "Odisha",
+    pinCode: "751023",
+    timings: "Evening Consultation: 6:00 PM – 8:30 PM (By Prior Appointment)",
+    emergency: "For emergencies, please report to MAX Super Speciality Hospital ER",
+    phone: "+91 94370 00000",
+    appointmentDesk: "+91 94370 00000",
+    whatsapp: "919437000000",
+    badge: "Outpatient Clinic",
+    verified: true,
+    mapsUrl: "https://maps.google.com/?q=Nalco+Square+Chandrasekharpur+Bhubaneswar",
+    features: [] // Infrastructure removed as requested by user
   }
 ];
 
