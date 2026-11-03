@@ -10,7 +10,7 @@ export default function AppointmentForm({ defaultLocation = "" }) {
     name: "",
     phone: "",
     email: "",
-    hospital: defaultLocation || locationsData[0]?.name || "Sparsh Hospitals & Critical Care",
+    hospital: defaultLocation || locationsData[0]?.name || "MAX Super Speciality Hospital (Formerly Kalinga Hospital)",
     date: "",
     message: "",
     honeypot: "" // Anti-spam field

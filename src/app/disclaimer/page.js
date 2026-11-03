@@ -79,7 +79,7 @@ export default function DisclaimerPage() {
               4. External Content & Affiliations
             </h2>
             <p>
-              Mentions of hospital affiliations (including Sparsh Hospitals & Critical Care and Kalinga Institute of Medical Sciences - KIMS) reflect professional clinical practice locations in Bhubaneswar, Odisha. Patients are encouraged to verify current OPD schedules prior to visiting.
+              Mentions of hospital affiliations (including MAX Super Speciality Hospital - Formerly Kalinga Hospital, Nalco Square, Chandrasekharpur, Bhubaneswar) reflect professional clinical practice locations in Bhubaneswar, Odisha. Patients are encouraged to verify current OPD schedules prior to visiting.
             </p>
           </div>
 

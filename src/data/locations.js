@@ -1,73 +1,61 @@
 export const locationsData = [
   {
-    id: "sparsh-hospital",
-    name: "Sparsh Hospitals & Critical Care",
-    tagline: "Primary Hospital Affiliation & Surgical Suite",
+    id: "max-super-speciality-hospital",
+    name: "MAX Super Speciality Hospital (Formerly Kalinga Hospital)",
+    shortName: "MAX Super Speciality Hospital",
+    tagline: "Primary Hospital Affiliation & Super Speciality Surgical Center",
     designation: "Senior Consultant Neurosurgeon & Spine Surgeon",
-    address: "Plot No. A/62, Saheed Nagar, Near Maharishi College Road, Bhubaneswar, Odisha 751007",
+    address: "Nalco Square, Chandrasekharpur, Bhubaneswar, Odisha 751023",
     city: "Bhubaneswar",
     state: "Odisha",
-    pinCode: "751007",
+    pinCode: "751023",
     timings: "Monday – Saturday: 10:00 AM – 2:00 PM & 5:00 PM – 8:00 PM",
-    emergency: "24/7 Emergency & Neuro-Trauma Available",
-    phone: "+91 674 254 0000",
+    emergency: "24/7 Advanced Emergency & Neurotrauma Care Available",
+    phone: "+91 674 230 0570",
     appointmentDesk: "+91 94370 00000",
     whatsapp: "919437000000",
     badge: "Primary Surgical Center",
     verified: true,
-    mapsUrl: "https://maps.google.com/?q=Sparsh+Hospitals+Saheed+Nagar+Bhubaneswar",
+    mapsUrl: "https://maps.google.com/?q=Max+Super+Speciality+Hospital+Nalco+Square+Chandrasekharpur+Bhubaneswar",
     features: [
-      "Modular Advanced Neurosurgery Operating Theatre",
+      "Modular Advanced Neurosurgery Operating Theatres",
       "High-Precision Operating Microscope & Endoscopic Spine Tower",
       "Dedicated 24/7 Neuro-Intensive Care Unit (NICU)",
-      "Advanced 1.5T/3T MRI & High-Speed Multislice CT Scan"
+      "Comprehensive Neuro-Radiology: 1.5T/3T MRI & High-Speed CT"
     ]
   },
   {
-    id: "kims-bhubaneswar",
-    name: "Kalinga Institute of Medical Sciences (KIMS)",
-    tagline: "Academic Super-Speciality Hospital Affiliation",
-    designation: "Visiting / Consulting Neurosurgeon",
-    address: "Kushabhadra Campus (KIIT Deemed University), Patia, Bhubaneswar, Odisha 751024",
+    id: "specialist-consultation-clinic",
+    name: "Specialist OPD & Consultation Clinic",
+    shortName: "Specialist Consultation Clinic",
+    tagline: "Private Outpatient & Scan Review Clinic",
+    designation: "Senior Neuro & Spine Care Specialist",
+    address: "Chandrasekharpur / Near Nalco Square, Bhubaneswar, Odisha 751023",
     city: "Bhubaneswar",
     state: "Odisha",
-    pinCode: "751024",
-    timings: "Specialist OPD Clinic by Prior Appointment",
-    emergency: "24/7 Trauma & Emergency Center",
-    phone: "+91 674 272 5000",
-    appointmentDesk: "+91 94370 00000",
-    whatsapp: "919437000000",
-    badge: "Super Speciality Affiliation",
-    verified: true,
-    mapsUrl: "https://maps.google.com/?q=KIMS+Hospital+Patia+Bhubaneswar",
-    features: [
-      "Tertiary Care Super Speciality Infrastructure",
-      "Advanced Neuro-Rehabilitation & Physical Therapy Wing",
-      "Comprehensive Neuro-Radiology & Interventional Suites"
-    ]
-  },
-  {
-    id: "neuro-gynocare-max",
-    name: "Neuro & Specialist Consultation Clinic",
-    tagline: "Private Outpatient Consultation Suite",
-    designation: "Senior Neuro & Spine Specialist Consultant",
-    address: "Saheed Nagar / Near District Center, Bhubaneswar, Odisha 751007",
-    city: "Bhubaneswar",
-    state: "Odisha",
-    pinCode: "751007",
-    timings: "Evening Consultation: 6:00 PM – 8:30 PM (By Appointment)",
-    emergency: "For emergencies, please report to Sparsh Hospital Emergency",
+    pinCode: "751023",
+    timings: "Evening Consultation: 6:00 PM – 8:30 PM (By Prior Appointment)",
+    emergency: "For emergencies, please report to MAX Super Speciality Hospital ER",
     phone: "+91 94370 00000",
     appointmentDesk: "+91 94370 00000",
     whatsapp: "919437000000",
     badge: "Outpatient Clinic",
     verified: true,
-    mapsUrl: "https://maps.google.com/?q=Saheed+Nagar+Bhubaneswar",
+    mapsUrl: "https://maps.google.com/?q=Nalco+Square+Chandrasekharpur+Bhubaneswar",
     features: [
-      "Comfortable, unhurried personal case discussions",
-      "Comprehensive review of MRI, CT, and X-ray imaging",
-      "Non-operative treatment planning & ergonomics guidance"
+      "Comfortable, unhurried personal clinical evaluations",
+      "In-depth review of MRI, CT, and X-ray imaging",
+      "Non-operative treatment planning & spinal ergonomics guidance"
     ]
   }
 ];
 
+export const consultationGuidelines = {
+  firstVisit: [
+    "Carry all prior medical records, prescriptions, and surgical discharge summaries.",
+    "Bring physical films/CDs for all MRI, CT, and X-ray scans (not only digital phone photos).",
+    "Prepare a concise chronological list of current symptoms, pain triggers, and prior treatments.",
+    "List all ongoing regular medications (e.g., blood thinners, hypertension, diabetes tablets)."
+  ],
+  emergencyWarning: "If experiencing sudden limb weakness, inability to walk, bowel/bladder incontinence, or severe post-accident neck/back trauma, please visit the emergency room immediately rather than awaiting routine OPD."
+};

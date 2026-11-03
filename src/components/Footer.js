@@ -150,7 +150,7 @@ export default function Footer() {
               Need to coordinate an OPD consultation or urgent review?
             </p>
             <p className="text-xs text-white/70">
-              Contact our patient coordination desk to reserve a consultation slot at Sparsh Hospital or KIMS.
+              Contact our patient coordination desk to reserve a consultation slot at MAX Super Speciality Hospital (Formerly Kalinga Hospital).
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-3">

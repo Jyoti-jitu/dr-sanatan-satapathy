@@ -47,9 +47,9 @@ export default function AppointmentCTASection() {
 
         {/* Trust & Location Summary */}
         <div className="pt-6 border-t border-white/10 flex flex-wrap items-center justify-center gap-6 text-xs text-white/60">
-          <span>OPD at Sparsh Hospitals & KIMS</span>
+          <span>OPD at MAX Super Speciality Hospital</span>
           <span>•</span>
-          <span>Bhubaneswar, Odisha</span>
+          <span>Nalco Square, Bhubaneswar</span>
           <span>•</span>
           <span>Dedicated Patient Coordination</span>
         </div>

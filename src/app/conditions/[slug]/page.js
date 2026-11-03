@@ -219,7 +219,7 @@ export default function ConditionDetailPage({ params }) {
                   Clinical Opinion for {condition.title}
                 </h3>
                 <p className="text-xs text-neutral-body leading-relaxed">
-                  Schedule an in-depth clinical consultation with Dr. Sanatan Satapathy at Sparsh Hospitals or KIMS, Bhubaneswar.
+                  Schedule an in-depth clinical consultation with Dr. Sanatan Satapathy at MAX Super Speciality Hospital, Bhubaneswar.
                 </p>
                 <Link
                   href={`/contact?condition=${encodeURIComponent(condition.title)}`}

@@ -341,7 +341,7 @@ export default function Navbar() {
                 <ShieldCheck className="w-5 h-5 text-teal shrink-0 mt-0.5" />
                 <div className="text-xs text-neutral-body">
                   <p className="font-semibold text-navy-heading">Verified Medical Practice</p>
-                  <p>Consultations at Sparsh Hospitals & KIMS, Bhubaneswar.</p>
+                  <p>Consultations at MAX Super Speciality Hospital (Formerly Kalinga Hospital), Bhubaneswar.</p>
                 </div>
               </div>
             </div>

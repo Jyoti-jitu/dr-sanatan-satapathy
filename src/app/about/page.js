@@ -52,13 +52,10 @@ export default function AboutPage() {
                 </div>
                 <div className="p-5 bg-white border-t border-neutral-border space-y-2">
                   <p className="font-heading font-bold text-navy-heading text-base">
-                    Clinical Appointments
+                    Clinical Appointment
                   </p>
                   <p className="text-xs text-neutral-body">
-                    Senior Consultant Neurosurgeon & Spine Surgeon, Sparsh Hospitals & Critical Care, Bhubaneswar.
-                  </p>
-                  <p className="text-xs text-neutral-body">
-                    Visiting / Consulting Neurosurgeon, Kalinga Institute of Medical Sciences (KIMS), Patia.
+                    Senior Consultant Neurosurgeon & Spine Surgeon, MAX Super Speciality Hospital (Formerly Kalinga Hospital), Nalco Square, Chandrasekharpur, Bhubaneswar.
                   </p>
                 </div>
               </div>

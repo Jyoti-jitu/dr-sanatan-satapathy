@@ -23,7 +23,7 @@ export default function HospitalLocationsSection() {
         </div>
 
         {/* Locations Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl">
           {locationsData.map((loc, idx) => (
             <div
               key={loc.id}
@@ -42,12 +42,12 @@ export default function HospitalLocationsSection() {
                 </div>
 
                 {/* Location Image */}
-                <div className="relative w-full h-40 rounded-xl overflow-hidden bg-neutral-100 border border-neutral-border">
+                <div className="relative w-full h-44 rounded-xl overflow-hidden bg-neutral-100 border border-neutral-border">
                   <Image
-                    src={idx === 0 ? doctorData.photos.clinic1 : idx === 1 ? "/images/hospital-facility.jpg" : doctorData.photos.clinic2}
+                    src={idx === 0 ? doctorData.photos.clinic1 : doctorData.photos.clinic2}
                     alt={loc.name}
                     fill
-                    sizes="(max-width: 1024px) 100vw, 33vw"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
                     className="object-cover"
                   />
                 </div>

@@ -34,7 +34,8 @@ export const metadata = {
     "Brain Tumor Surgery Bhubaneswar",
     "Slipped Disc Treatment Bhubaneswar",
     "Minimally Invasive Spine Surgery",
-    "Sparsh Hospital Neurosurgeon",
+    "MAX Super Speciality Hospital Neurosurgeon",
+    "Kalinga Hospital Neurosurgeon",
     "Best Neurosurgeon in Odisha"
   ],
   authors: [{ name: "Dr. Sanatan Satapathy" }],
@@ -118,11 +119,7 @@ export default function RootLayout({ children }) {
     "hospitalAffiliation": [
       {
         "@type": "Hospital",
-        "name": "Sparsh Hospitals & Critical Care, Bhubaneswar"
-      },
-      {
-        "@type": "Hospital",
-        "name": "Kalinga Institute of Medical Sciences (KIMS), Bhubaneswar"
+        "name": "MAX Super Speciality Hospital (Formerly Kalinga Hospital), Nalco Square, Chandrasekharpur, Bhubaneswar"
       }
     ]
   };

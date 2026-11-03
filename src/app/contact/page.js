@@ -24,7 +24,7 @@ export default function ContactPage({ searchParams }) {
               Contact & Book Consultation
             </h1>
             <p className="editorial-lead text-neutral-body">
-              Reserve an in-person outpatient clinical evaluation with Dr. Sanatan Satapathy at Sparsh Hospitals or KIMS in Bhubaneswar.
+              Reserve an in-person outpatient clinical evaluation with Dr. Sanatan Satapathy at MAX Super Speciality Hospital (Formerly Kalinga Hospital) in Bhubaneswar.
             </p>
           </div>
         </div>

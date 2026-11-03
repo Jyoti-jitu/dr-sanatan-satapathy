@@ -25,7 +25,7 @@ export const testimonialsData = [
     location: "Rourkela, Odisha",
     condition: "Spinal Canal Stenosis",
     procedure: "Minimally Invasive Lumbar Decompression",
-    quote: "Severe spinal stenosis made standing or shopping for more than 5 minutes impossible due to heavy, cramping legs. Dr. Satapathy performed minimally invasive decompression at Sparsh Hospital. The small incision caused negligible pain and my walking distance was restored within weeks.",
+    quote: "Severe spinal stenosis made standing or shopping for more than 5 minutes impossible due to heavy, cramping legs. Dr. Satapathy performed minimally invasive decompression at the hospital. The small incision caused negligible pain and my walking distance was restored within weeks.",
     date: "Patient Experience",
     verified: true
   },

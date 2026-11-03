@@ -7,7 +7,7 @@ import AppointmentCTASection from "@/components/AppointmentCTASection";
 
 export const metadata = {
   title: "Consultation Locations & Hospital Affiliations | Dr. Sanatan Satapathy",
-  description: "OPD consultation timings, hospital addresses, and emergency facilities for Dr. Sanatan Satapathy at Sparsh Hospitals and KIMS in Bhubaneswar, Odisha.",
+  description: "OPD consultation timings, hospital address, and emergency facilities for Dr. Sanatan Satapathy at MAX Super Speciality Hospital (Formerly Kalinga Hospital) in Bhubaneswar, Odisha.",
 };
 
 export default function HospitalsPage() {
@@ -34,7 +34,7 @@ export default function HospitalsPage() {
       <section className="section-padding">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl">
             {locationsData.map((loc, idx) => (
               <div
                 key={loc.id}
@@ -50,12 +50,12 @@ export default function HospitalsPage() {
                     </span>
                   </div>
 
-                  <div className="relative w-full h-44 rounded-xl overflow-hidden bg-neutral-100 border border-neutral-border">
+                  <div className="relative w-full h-48 rounded-xl overflow-hidden bg-neutral-100 border border-neutral-border">
                     <Image
-                      src={idx === 0 ? doctorData.photos.clinic1 : idx === 1 ? "/images/hospital-facility.jpg" : doctorData.photos.clinic2}
+                      src={idx === 0 ? doctorData.photos.clinic1 : doctorData.photos.clinic2}
                       alt={loc.name}
                       fill
-                      sizes="(max-width: 1024px) 100vw, 33vw"
+                      sizes="(max-width: 1024px) 100vw, 50vw"
                       className="object-cover"
                     />
                   </div>
@@ -143,7 +143,7 @@ export default function HospitalsPage() {
                 Emergency & Acute Trauma Protocols
               </h3>
               <p className="text-xs sm:text-sm text-neutral-body max-w-2xl">
-                For traumatic brain injuries, vehicular road accidents, sudden loss of consciousness, or acute post-traumatic paralysis, please transport the patient immediately to the 24/7 Casualty & Emergency Department at Sparsh Hospitals, Saheed Nagar, Bhubaneswar.
+                For traumatic brain injuries, vehicular road accidents, sudden loss of consciousness, or acute post-traumatic paralysis, please transport the patient immediately to the 24/7 Casualty & Emergency Department at MAX Super Speciality Hospital (Formerly Kalinga Hospital), Nalco Square, Chandrasekharpur, Bhubaneswar.
               </p>
             </div>
             <a

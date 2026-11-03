@@ -55,11 +55,11 @@ export default function CredentialsStrip() {
               <Building2 className="w-5 h-5" />
             </div>
             <div>
-              <p className="text-xs uppercase font-semibold text-neutral-body tracking-wider">Consultation Centers</p>
+              <p className="text-xs uppercase font-semibold text-neutral-body tracking-wider">Hospital Affiliation</p>
               <h4 className="font-heading font-bold text-navy-heading text-sm mt-0.5">
-                Sparsh Hospitals & KIMS
+                MAX Super Speciality Hospital
               </h4>
-              <p className="text-xs text-neutral-body mt-0.5">Bhubaneswar, Odisha</p>
+              <p className="text-xs text-neutral-body mt-0.5">Formerly Kalinga Hospital, Bhubaneswar</p>
             </div>
           </div>
 
