@@ -14,8 +14,8 @@ export default function DoctorIntro() {
             <div className="relative mx-auto max-w-md lg:max-w-none">
               
               {/* Photo Frame */}
-              <div className="relative rounded-2xl overflow-hidden bg-neutral-offwhite border border-neutral-border shadow-card">
-                <div className="relative w-full aspect-[4/5]">
+              <div className="relative rounded-2xl overflow-hidden bg-white border border-neutral-border shadow-card">
+                <div className="relative w-full aspect-[4/5] bg-neutral-50">
                   <Image
                     src={doctorData.photos.portrait}
                     alt={`${doctorData.name} in clinical practice`}
@@ -23,7 +23,7 @@ export default function DoctorIntro() {
                     sizes="(max-width: 1024px) 100vw, 480px"
                     className="object-cover object-top"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-transparent to-transparent opacity-60" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy/40 via-transparent to-transparent opacity-30" />
                 </div>
 
                 {/* Caption Panel */}
