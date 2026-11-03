@@ -75,7 +75,16 @@ export default function Hero() {
           </div>
 
           {/* Right Visual Composition (5 cols on lg) */}
-          <div className="lg:col-span-5 relative flex justify-center lg:justify-end">
+          <div className="lg:col-span-5 relative flex flex-col items-center lg:items-end justify-center">
+            
+            {/* Verified Specialist Pill positioned ABOVE the hero image */}
+            <div className="w-full max-w-md mb-3 flex items-center justify-start">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white shadow-sm border border-neutral-border text-navy-heading text-xs font-bold">
+                <CheckCircle2 className="w-4 h-4 text-teal shrink-0" />
+                <span>Verified Specialist • Registered Neurosurgeon</span>
+              </div>
+            </div>
+
             <div className="relative w-full max-w-md">
               
               {/* Decorative subtle border frame */}
@@ -94,12 +103,6 @@ export default function Hero() {
                   />
                   {/* Subtle bottom vignette */}
                   <div className="absolute inset-0 bg-gradient-to-t from-navy/85 via-navy/20 to-transparent opacity-80" />
-                  
-                  {/* Top Verified Pill (Non-overlapping) */}
-                  <div className="absolute top-4 left-4 inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md shadow-sm border border-neutral-border/80 text-navy-heading text-xs font-bold">
-                    <CheckCircle2 className="w-4 h-4 text-teal shrink-0" />
-                    <span>Verified Specialist • Registered Neurosurgeon</span>
-                  </div>
 
                   {/* Overlay Name Banner */}
                   <div className="absolute bottom-4 left-4 right-4 text-white">
