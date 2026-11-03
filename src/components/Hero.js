@@ -101,32 +101,31 @@ export default function Hero() {
                     sizes="(max-width: 768px) 100vw, 450px"
                     className="object-cover object-top"
                   />
-                  {/* Subtle bottom vignette */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy/85 via-navy/20 to-transparent opacity-80" />
+                </div>
 
-                  {/* Overlay Name Banner */}
-                  <div className="absolute bottom-4 left-4 right-4 text-white">
-                    <p className="font-heading font-bold text-lg text-white">
+                {/* Doctor Details & Credential Panel below photo - crystal clear, no dark shades */}
+                <div className="p-4 bg-white border-t border-neutral-border text-left space-y-3">
+                  <div>
+                    <h3 className="font-heading font-bold text-lg text-navy-heading">
                       {doctorData.name}
-                    </p>
-                    <p className="text-xs text-teal-light font-medium">
+                    </h3>
+                    <p className="text-xs text-teal font-semibold">
                       MBBS, MS, MCh (Neurosurgery)
                     </p>
-                    <p className="text-[11px] text-white/80 mt-0.5">
+                    <p className="text-[11px] text-neutral-body mt-0.5">
                       Senior Neurosurgeon & Spine Care Specialist
                     </p>
                   </div>
-                </div>
 
-                {/* Micro Credential Panel below photo */}
-                <div className="p-4 bg-white grid grid-cols-2 gap-3 border-t border-neutral-border text-left">
-                  <div className="p-2.5 rounded-lg bg-neutral-offwhite border border-neutral-border/60">
-                    <p className="text-[11px] text-neutral-body uppercase font-semibold">Specialization</p>
-                    <p className="text-xs font-bold text-navy-heading mt-0.5">Endoscopic Spine & Cranial</p>
-                  </div>
-                  <div className="p-2.5 rounded-lg bg-neutral-offwhite border border-neutral-border/60">
-                    <p className="text-[11px] text-neutral-body uppercase font-semibold">Training</p>
-                    <p className="text-xs font-bold text-navy-heading mt-0.5">SCB Cuttack & AIIMS</p>
+                  <div className="grid grid-cols-2 gap-2 pt-2 border-t border-neutral-border/60">
+                    <div className="p-2 rounded-lg bg-neutral-offwhite border border-neutral-border/60">
+                      <p className="text-[10px] text-neutral-body uppercase font-semibold">Specialization</p>
+                      <p className="text-xs font-bold text-navy-heading mt-0.5">Endoscopic Spine & Cranial</p>
+                    </div>
+                    <div className="p-2 rounded-lg bg-neutral-offwhite border border-neutral-border/60">
+                      <p className="text-[10px] text-neutral-body uppercase font-semibold">Training</p>
+                      <p className="text-xs font-bold text-navy-heading mt-0.5">SCB Cuttack & AIIMS</p>
+                    </div>
                   </div>
                 </div>
               </div>

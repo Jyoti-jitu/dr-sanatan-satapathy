@@ -23,7 +23,6 @@ export default function DoctorIntro() {
                     sizes="(max-width: 1024px) 100vw, 480px"
                     className="object-cover object-top"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy/40 via-transparent to-transparent opacity-30" />
                 </div>
 
                 {/* Caption Panel */}

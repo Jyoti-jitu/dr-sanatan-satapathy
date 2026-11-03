@@ -49,7 +49,6 @@ export default function AboutPage() {
                     sizes="(max-width: 1024px) 100vw, 480px"
                     className="object-cover object-top"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy/70 via-transparent to-transparent opacity-40" />
                 </div>
                 <div className="p-5 bg-white border-t border-neutral-border space-y-2">
                   <p className="font-heading font-bold text-navy-heading text-base">
